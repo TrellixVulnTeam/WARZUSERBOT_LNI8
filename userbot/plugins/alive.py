@@ -41,10 +41,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 uptime = get_readable_time((time.time() - StartTime))
-DEFAULTUSER = ALIVE_NAME or "𝖑𝖊ɠêɳ̃dẞø✞︎ 🇮🇳"
+DEFAULTUSER = ALIVE_NAME or "᭙ꪖ᥅ƺẞø† 🇮🇳"
 LEGEND_IMG = "https://telegra.ph/file/153977a71b928874151a5.jpg"
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice 𝖑𝖊ɠêɳ̃dẞø✞︎"
-CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@Legend_Userbot"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ωαяz Choice ᭙ꪖ᥅ƺẞø†"
+CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@WarZSupport"
 
 Legend = bot.uid
 mention = f"[{DEFAULTUSER}](tg://user?id={Legend})"
@@ -63,10 +63,10 @@ async def amireallyalive(alive):
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"        **✘𝕭𝖔† 𝕾𝖙𝖆𝖙𝖚𝖘✘** \n"
         LEGEND_caption += f"•🔥• **Oաղ̃ҽ̈ɾ**          ~ {ALIVE_NAME}\n\n"
-        LEGEND_caption += f"•🌟• **𝖑𝖊ɠêɳ̃dẞø†**   ~ {LEGENDversion}\n"
+        LEGEND_caption += f"•🌟• **᭙ꪖ᥅ƺẞø†**   ~ {LEGENDversion}\n"
         LEGEND_caption += f"•🌟• **†ҽ̀lҽ́thøղ̃**     ~ `{version.__version__}`\n"
         LEGEND_caption += f"•🌟• **𝚄ρtime**         ~ `{uptime}`\n"
-        LEGEND_caption += f"•🌟• **𝙶𝚛𝚘𝚞𝚙**           ~ [𝙶𝚛𝚘𝚞𝚙](t.me/Legend_Userbot)\n"
+        LEGEND_caption += f"•🌟• **𝙶𝚛𝚘𝚞𝚙**           ~ [𝙶𝚛𝚘𝚞𝚙](t.me/TheWarZBOT)\n"
         LEGEND_caption += f"•🌟• **𝙼𝚢 𝙶𝚛𝚘𝚞𝚙**  ~ {CUSTOM_YOUR_GROUP}\n"
 
         await alive.client.send_file(
@@ -80,20 +80,20 @@ async def amireallyalive(alive):
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"         \n"
             f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
+            f"🇮🇳 ωαяzϐοτ  : `{LEGENDversion}`\n"
             f"🇮🇳 υρτιмє        : `{uptime}`\n"
             f"🔱 ɱαรƭεɾ        : {mention}\n"
-            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/The_LegendBoy)\n",
+            f"🔱 σωɳεɾ         : [ωαяz](t.me/TheWarZ_Boy)\n",
         )
 
 
 msg = f"""
-**  ⚜️ Lêɠêɳ̃dẞø† ιѕ σиℓιиє ⚜️**
+**  ⚜️ ᭙ꪖ᥅ƺẞø† ιѕ σиℓιиє ⚜️**
 
        {Config.ALIVE_MSG}
     **  Bø✞︎ ẞ✞︎α✞︎µѕ **
 **•⚜️•Øաղ̃ҽ̈r     :** **{mention}**
-**•🌹•𝖑𝖊ɠêɳ̃dẞø✞︎  :** {LEGENDversion}
+**•🌹•᭙ꪖ᥅ƺẞø†  :** {LEGENDversion}
 **•🌹•✞︎ҽ̀lҽ́ƭhøղ  :** {version.__version__}
 **•🌹•Ãbûßê     :**  {abuse_m}
 **•🌹•ßudø      :**  {is_sudo}
