@@ -27,7 +27,7 @@ async def start(event):
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
     vent = event.chat_id
-    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy [➤ Master](tg://user?id={bot.uid}) \nI Can Deliver Message To My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [『Lêɠêɳ̃dẞø†』](https://t.me/Official_LegendBot)"
+    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy [➤ Master](tg://user?id={bot.uid}) \nI Can Deliver Message To My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [『᭙ꪖ᥅ƺẞø†』](https://t.me/TeamWarZ)"
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
@@ -44,8 +44,8 @@ async def start(event):
                     custom.Button.inline("👾 Cᴏᴍᴍᴀɴᴅs ✘👾", data="gibcmd"),
                 ],
                 [
-                    Button.url(" Support ", "https://t.me/Legend_Userbot"),
-                    Button.url(" Updates ", "https://t.me/Official_LegendBot"),
+                    Button.url(" Support ", "https://t.me/WarZSupport"),
+                    Button.url(" Updates ", "https://t.me/TheWarZBOT"),
                 ],
                 [custom.Button.inline("⚙ Sᴇᴛᴛɪɴɢs ⚙", data="settings")],
                 [custom.Button.inline("⚜ Hack ⚜", data="hack")],
@@ -129,7 +129,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**Wʜᴀᴛ Dᴏ Yᴏᴜ Wᴀɴᴛ Yᴏ Eᴅɪᴛ Iɴ Aʟɪᴠᴇ?\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Hᴇʟᴘ Dᴏ Jᴏɪɴ [Đ₳Ɽ₭ Ƒմʂʂìօղ](https://t.me/Dark_Fussion_chat)**",
+            message=f"**Wʜᴀᴛ Dᴏ Yᴏᴜ Wᴀɴᴛ Yᴏ Eᴅɪᴛ Iɴ Aʟɪᴠᴇ?\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Hᴇʟᴘ Dᴏ Jᴏɪɴ [᭙ꪖ᥅ƺẞø†](https://t.me/WarZSupport)**",
             buttons=[
                 [
                     Button.inline("✘ Aʟɪᴠᴇ Nᴀᴍᴇ ✘", data="name"),
@@ -146,7 +146,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**Wʜɪᴄʜ Aʟɪᴠᴇ Pɪᴄ Dᴏ Yᴏᴜ Wᴀɴᴛ Tᴏ Cʜᴀɴɢᴇ?\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Hᴇʟᴘ Dᴏ Jᴏɪɴ [Lêɠêɳ̃dẞø†](https://t.me/Official_LegendBot)**",
+            message=f"**Wʜɪᴄʜ Aʟɪᴠᴇ Pɪᴄ Dᴏ Yᴏᴜ Wᴀɴᴛ Tᴏ Cʜᴀɴɢᴇ?\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Hᴇʟᴘ Dᴏ Jᴏɪɴ [᭙ꪖ᥅ƺẞø†](https://t.me/WarZSupport)**",
             buttons=[
                 [Button.inline("✘ Dᴇғᴀᴜʟᴛ Aʟɪᴠᴇ ✘", data="aimg")],
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="alive")],
@@ -161,7 +161,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**Yᴏᴜ Cᴀɴ Cʜᴀɴɢᴇ Aʟɪᴠᴇ Nᴀᴍᴇ..!!\nJᴜsᴛ Fᴏʟʟᴏᴡ Tʜᴇ Sᴛᴇᴘs.! \n\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Pʀᴏʙʟᴇᴍ Oʀ Dᴏᴜʙᴛ Dᴏ Jᴏɪɴ [Lêɠêɳ̃dẞø†](http://t.me/Official_LegendBot)\n\nJᴜsᴛ Tʏᴘᴇ\n\n`.set var ALIVE_NAME <Name>`\n\nRᴇᴍᴏᴠᴇ `<>` Tʜɪs.**",
+            message=f"**Yᴏᴜ Cᴀɴ Cʜᴀɴɢᴇ Aʟɪᴠᴇ Nᴀᴍᴇ..!!\nJᴜsᴛ Fᴏʟʟᴏᴡ Tʜᴇ Sᴛᴇᴘs.! \n\nFᴏʀ Aɴʏ Kɪɴᴅ Oғ Pʀᴏʙʟᴇᴍ Oʀ Dᴏᴜʙᴛ Dᴏ Jᴏɪɴ [᭙ꪖ᥅ƺẞø†](http://t.me/WarZSupport)\n\nJᴜsᴛ Tʏᴘᴇ\n\n`.set var ALIVE_NAME <Name>`\n\nRᴇᴍᴏᴠᴇ `<>` Tʜɪs.**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="alive")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="settings")],
@@ -175,7 +175,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**You can change Alive Pic for `.alive`\nJust follow the steps.!\nAny kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_LegendBot)\n\nJust type\n\n`.set var ALIVE_PIC <Telegraph Link>`\n\nRemove `<>` this**",
+            message=f"**You can change Alive Pic for `.alive`\nJust follow the steps.!\nAny kind of Problem or doubt do join [᭙ꪖ᥅ƺẞø†](t.me/WarZSupport)\n\nJust type\n\n`.set var ALIVE_PIC <Telegraph Link>`\n\nRemove `<>` this**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="img")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="settings")],
@@ -189,7 +189,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**You can change Alive Pic for `.dalive` \nJust follow the steps.!\nAny kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_LegendBot)\n\nJust type\n\n`.set var AWAKE_PIC <Telegraph Link>`\n\nRemove `<>` this.**",
+            message=f"**You can change Alive Pic for `.dalive` \nJust follow the steps.!\nAny kind of Problem or doubt do join [᭙ꪖ᥅ƺẞø†](t.me/WarZSupport)\n\nJust type\n\n`.set var AWAKE_PIC <Telegraph Link>`\n\nRemove `<>` this.**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="img")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="settings")],
@@ -203,7 +203,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**What do you want to edit in Pm Permit?\nFor Any kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_LegendBot)**",
+            message=f"**What do you want to edit in Pm Permit?\nFor Any kind of Problem or doubt do join [᭙ꪖ᥅ƺẞø†](t.me/WarZSupport)**",
             buttons=[
                 [
                     Button.inline("✘ Pᴍ Pᴇʀᴍɪᴛ Tᴇxᴛ ✘", data="text"),
@@ -220,7 +220,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**You can change Pic permit Pic..!! \nJust follow the steps.!\nAny kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_LegendBot) type\n\n`.set var PM_PIC <Telegraph Link>`\n\nRemove `<>` this.**",
+            message=f"**You can change Pic permit Pic..!! \nJust follow the steps.!\nAny kind of Problem or doubt do join [᭙ꪖ᥅ƺẞø†](t.me/WarZSupport) type\n\n`.set var PM_PIC <Telegraph Link>`\n\nRemove `<>` this.**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="permit")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="settings")],
@@ -234,7 +234,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**You can change Pic permit message..!! \nJust follow the steps.!\nAny kind of Problem or doubt do join [Lêɠêɳ̃dẞø†](t.me/Official_LegendBot)\n\nJust type\n\n`.set var PM_MSG <Text>`\n\nRemove `<>` this.**",
+            message=f"**You can change Pic permit message..!! \nJust follow the steps.!\nAny kind of Problem or doubt do join [᭙ꪖ᥅ƺẞø†](t.me/WarZSupport)\n\nJust type\n\n`.set var PM_MSG <Text>`\n\nRemove `<>` this.**",
             buttons=[
                 [Button.inline("✘ Bᴀᴄᴋ ✘", data="permit")],
                 [Button.inline("🚫 Cᴀɴᴄᴇʟ 🚫", data="settings")],
@@ -248,7 +248,7 @@ async def help(event):
     if event.query.user_id == bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message=f"**Which type of setting do you want to edit?\nYou can change anything from these..!!\nAny kind for help do join [Lêɠêɳ̃dẞø†](t.me/Official_LegendBot)**",
+            message=f"**Which type of setting do you want to edit?\nYou can change anything from these..!!\nAny kind for help do join [᭙ꪖ᥅ƺẞø†](t.me/WarZSupport)**",
             buttons=[
                 [
                     Button.inline("✘ Aʟɪᴠᴇ ✘", data="alive"),
@@ -280,7 +280,7 @@ async def users(event):
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"v_hack")))
 async def users(event):
     await event.delete()
-    grabon = "Sorry, Only My Owner Can Acess This Button. If U Want To Use Then Deploy Ur Own Lêɠêɳ̃dẞø†"
+    grabon = "Sorry, Only My Owner Can Acess This Button. If U Want To Use Then Deploy Ur Own ᭙ꪖ᥅ƺẞø†"
     await tgbot.send_message(event.chat_id, grabon)
 
 
