@@ -16,10 +16,10 @@ from userbot.Config import Config
 
 from . import *
 
-DEFAULTUSER = ALIVE_NAME or "LEGEND"
+DEFAULTUSER = ALIVE_NAME or "᭙ꪖ᥅ƺẞø†"
 legend_row = Config.BUTTONS_IN_HELP
-legend_emoji1 = Config.EMOJI_IN_HELP1 or "♦️"
-legend_emoji2 = Config.EMOJI_IN_HELP2 or "♦️"
+legend_emoji1 = Config.EMOJI_IN_HELP1 or "⚔️"
+legend_emoji2 = Config.EMOJI_IN_HELP2 or "⚔️"
 alive_emoji = Config.ALIVE_EMOJI or "⚜"
 legend_pic = Config.PM_PIC or "https://te.legra.ph/file/0c605739ddaa472cad75f.jpg"
 cstm_pmp = Config.PM_MSG
@@ -69,7 +69,7 @@ alive_txt = """
 **{}**\n
   🏅Bø† ẞ†α†µѕ🏅
 **•{}•Oաղ̃ҽ̈r :** {}\n
-**•{}•Lêɠêɳ̃dẞø† :** {}
+**•{}•᭙ꪖ᥅ƺẞø† :** {}
 **•{}•†ҽ̀lҽ́ƭhøղ  :** {}
 **•{}•Ãbûßê     :** {}
 **•{}•ßudø      :** {}
@@ -265,7 +265,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     )
                 ],
                 [
-                    Button.url("🔹️Command🔹️", f"http://telegra.ph/Astronomer-10-07"),
+                    Button.url("🔹️Command🔹️", f"https://telegra.ph/Astronomer-12-10"),
                 ],
             ]
             if VAR_PIC and VAR_PIC.endswith((".jpg", ".png")):
@@ -279,14 +279,14 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     VAR_PIC,
                     text=le_gend,
-                    title="LegendBot Alive",
+                    title="WarZBot Alive",
                     buttons=var_btn,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
                     text=le_gend,
-                    title="LegendBot Alive",
+                    title="WarZBot Alive",
                     buttons=var_btn,
                     link_preview=False,
                 )
@@ -297,11 +297,11 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 text=f"**⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 𝙻𝚎𝚐𝚎𝚗𝚍𝙱𝚘𝚝 ⚜**",
                 buttons=[
                     [Button.url("♥️ Tutorial ♥", "https://youtu.be/9dQgdUJfk_k")],
-                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/LEGEND-OS/LEGENDBOT")],
+                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/Team-WarZ/WarZBOT")],
                     [
                         Button.url(
                             "💞 Deploy 💞",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT&template=https%3A%2F%2Fgithub.com%2FLEGEND-OS%2FLEGENDBOT",
+                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FTeam-WarZ%2FWarZBOT&template=https%3A%2F%2Fgithub.com%2FTeam-WarZ%2FWarZBOT",
                         )
                     ],
                 ],
@@ -322,7 +322,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 buttons=[
                     [
                         custom.Button.url(
-                            "⭐ Repo ⭐", "https://Github.com/LEGEND-OS/LEGENDBOT"
+                            "⭐ Repo ⭐", "https://Github.com/Team-WarZ/WarZBOT"
                         ),
                         custom.Button.url(
                             "⚡ Repl ⚡",
@@ -341,7 +341,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"🔰 This is Lêɠêɳ̃dẞø† PM Security for {legend_mention} to keep away unwanted retards from spamming PM..."
+                f"🔰 This is ᭙ꪖ᥅ƺẞø† PM Security for {legend_mention} to keep away unwanted retards from spamming PM..."
             )
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"req")))
@@ -520,12 +520,12 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 f"{legend_emoji1} Re-Open Menu {legend_emoji2}", data="reopen"
             )
             await event.edit(
-                f"**⚜️ Lêɠêɳ̃dẞø† Mêñû Prõvîdêr háš běěn čłøšĕd ⚜️**\n\n**Bot Of :**  {legend_mention}\n\n            [©️Lêɠêɳ̃dẞø†]({chnl_link})",
+                f"**⚜️ ᭙ꪖ᥅ƺẞø† Mêñû Prõvîdêr háš běěn čłøšĕd ⚜️**\n\n**Bot Of :**  {legend_mention}\n\n            [©️᭙ꪖ᥅ƺẞø†]({chnl_link})",
                 buttons=veriler,
                 link_preview=False,
             )
         else:
-            reply_pop_up_alert = "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα. Aα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   ©Lêɠêɳ̃dẞø†"
+            reply_pop_up_alert = "κγα υиgℓι καя янє нο мєяє ϐοτ ραя αgαя ϲнαнιγє τοн κнυ∂ κα ϐαиα ℓο иα. Aα נατє нο υиgℓι καяиє мєяє ϐοτ ρє.   ©᭙ꪖ᥅ƺẞø†"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
@@ -544,7 +544,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "This Button Only For My Master.   ©Lêɠêɳ̃dẞø†",
+                "This Button Only For My Master.   ©᭙ꪖ᥅ƺẞø†",
                 cache_time=0,
                 alert=True,
             )
@@ -584,7 +584,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. ©Lêɠêɳ̃dẞø†™",
+                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. ©᭙ꪖ᥅ƺẞø†™",
                 cache_time=0,
                 alert=True,
             )
@@ -635,7 +635,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "MY MASTER ONLY CAN ACCESS THIS BUTTON. DEPLOY UR OWN ©Lêɠêɳ̃dẞø†™ ",
+                "MY MASTER ONLY CAN ACCESS THIS BUTTON. DEPLOY UR OWN ©᭙ꪖ᥅ƺẞø†™ ",
                 cache_time=0,
                 alert=True,
             )
