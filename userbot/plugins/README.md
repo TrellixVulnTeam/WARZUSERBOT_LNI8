@@ -1,1 +1,1 @@
-# LegendBot-Addons
+# WarZBot-Addons
