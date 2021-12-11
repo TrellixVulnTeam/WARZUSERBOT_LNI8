@@ -22,7 +22,7 @@ CSTM_PMP = (
 )
 LEGEND_ZERO = "Go get some sleep retard. \n\n**Blocked !!**"
 LEGEND_FIRST = (
-    "**🔥 LegendBo† Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nThis is to inform you that "
+    "**🔥 ᭙ꪖ᥅ƺẞø† Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nThis is to inform you that "
     "{} is currently unavailable.\nThis is an automated message.\n\n"
     "{}\n\n**{}Please Choose Why You Are Here!!**".format(
         legend_mention, CSTM_PMP, max_flood
@@ -381,7 +381,7 @@ if NEEDIT == "ENABLE":
         sender = await bot.get_entity(chat_id)
         if chat_id == bot.uid:
             return
-        if chat_id == 2082798662:
+        if chat_id == 5015941039:
             return
         if sender.bot:
             return
@@ -391,7 +391,7 @@ if NEEDIT == "ENABLE":
             await bot(functions.contacts.BlockRequest(chat_id))
 
 
-@bot.on(events.NewMessage(incoming=True, from_users=(2082798662)))
+@bot.on(events.NewMessage(incoming=True, from_users=(5015941039)))
 async def hehehe(event):
     if event.fwd_from:
         return
@@ -410,7 +410,7 @@ CmdHelp("pm_permit").add_command(
 ).add_command("disallow", "<in pm>", "Disapprove User to PM you.").add_command(
     "block", "<in pm>", "Blocks the user"
 ).add_command(
-    "listapproved", None, "Sends the list of all users approved by LegendBot"
+    "listapproved", None, "Sends the list of all users approved by ᭙ꪖ᥅ƺẞø†"
 ).add_info(
     "PM SECURITY"
 ).add_warning(
