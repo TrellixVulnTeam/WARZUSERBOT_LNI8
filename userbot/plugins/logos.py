@@ -15,13 +15,13 @@ PICS_STR = []
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
 async def lg1(LEGENDevent):
     event = await edit_or_reply(LEGENDevent, "`Processing.....`")
-    fnt = await get_font_file(event.client, "@LegendFonts")
+    fnt = await get_font_file(event.client, "@WarZ_Fonts")
     if LEGENDevent.reply_to_msg_id:
         rply = await LEGENDevent.get_reply_message()
         logo_ = await rply.download_media()
     else:
         async for i in bot.iter_messages(
-            "@LEGEND_MR_LOGOS", filter=InputMessagesFilterPhotos
+            "@WarZ_AF_Logos", filter=InputMessagesFilterPhotos
         ):
             PICS_STR.append(i)
         pic = random.choice(PICS_STR)
@@ -57,7 +57,7 @@ async def lg1(LEGENDevent):
     draw.text(
         (w_, h_), text, font=font, fill="white", stroke_width=strik, stroke_fill="black"
     )
-    file_name = "LEGENDBOT.png"
+    file_name = "WarZBOT.png"
     img.save(file_name, "png")
     await bot.send_file(
         LEGENDevent.chat_id,
