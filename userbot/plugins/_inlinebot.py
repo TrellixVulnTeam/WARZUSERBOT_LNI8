@@ -318,7 +318,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         else:
             result = builder.photo(
                 ALV_PIC,
-                text="""Hey! This is [Lêɠêɳ̃dẞø†](https://t.me/Official_LegendBot) \nYou can know more about me from the links given below 👇""",
+                text="""Hey! This is [᭙ꪖ᥅ƺẞø†](https://t.me/TeamWarZ) \nYou can know more about me from the links given below 👇""",
                 buttons=[
                     [
                         custom.Button.url(
@@ -510,7 +510,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            reply_pop_up_alert = "This Is For My Master Only.Dont Try To Touch Again. Deploy Ur Own © Lêɠêɳ̃dẞø†™"
+            reply_pop_up_alert = "This Is For My Master Only.Dont Try To Touch Again. Deploy Ur Own © ᭙ꪖ᥅ƺẞø†™"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
