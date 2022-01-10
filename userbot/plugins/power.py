@@ -16,7 +16,7 @@ async def _(event):
     await event.edit("яєϐοοτιиg **[ ██░ ]** ...\nωαιτ ƒєω мιиυτє☢️")
     await event.edit("яєϐοοτιиg **[ ███ ]** ...\nωαιτ ƒєω мιиυτєѕ☢️")
     await event.edit(
-        f"Rebooted 𝕷𝐞̂𝐠𝐞́𝐧̃𝐝𝕭ø𝖙 {LEGENDversion} **[ ✔️ ]** ...\nType `.ping` or `.legend` after 5min to check if I am working✔️"
+        f"Rebooted ᭙ꪖ᥅ƺẞø† {LEGENDversion} **[ ✔️ ]** ...\nType `.ping` or `.legend` after 5min to check if I am working✔️"
     )
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
@@ -28,7 +28,7 @@ async def _(event):
     if event.fwd_from:
         return
     await event.edit(
-        "**[ ! ]** `⚰️Turning off bot now ... Manually turn me on later or follow step of update in @Legend_Userbot` ಠ_ಠ"
+        "**[ ! ]** `⚰️Turning off bot now ... Manually turn me on later or follow step of update in @TheWarZBOT` ಠ_ಠ"
     )
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["userbot"].scale(0)
@@ -39,7 +39,7 @@ async def _(event):
 @bot.on(admin_cmd(pattern="reload$"))
 @bot.on(sudo_cmd(pattern="reload$", allow_sudo=True))
 async def rel(event):
-    await eor(event, "Reloading Lêɠêɳ̃dẞø†... Wait for few seconds...")
+    await eor(event, "Reloading ᭙ꪖ᥅ƺẞø†... Wait for few seconds...")
     await reload_LEGENDBOT()
 
 
