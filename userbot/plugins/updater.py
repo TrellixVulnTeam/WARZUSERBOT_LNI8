@@ -34,21 +34,21 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "please check out to an official branch, and re-start the updater."
 )
 OFFICIAL_UPSTREAM_REPO = Config.UPSTREAM_REPO
-BOT_IS_UP_TO_DATE = "**The LEGENDBOT** is up-to-date sir."
+BOT_IS_UP_TO_DATE = "**The ᭙ꪖ᥅ƺẞø†** is up-to-date sir."
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
     "changelog: \n\n{changelog}\n"
-    "updating your LEGENDBOT ..."
+    "updating your ᭙ꪖ᥅ƺẞø† ..."
 )
 NEW_UP_DATE_FOUND = (
-    "New update found for {branch_name}\n" "`updating your LEGENDBOT...`"
+    "New update found for {branch_name}\n" "`updating your ᭙ꪖ᥅ƺẞø†...`"
 )
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "master"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
 NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 
-legendbot_info = "https://raw.githubusercontent.com/The-LegendBot/LEGENDUSERBOT/LegendBot/legendboy-info.json"
+legendbot_info = "https://raw.githubusercontent.com/Team-WarZ/WARZUSERBOT/LegendBot/legendboy-info.json"
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 requirements_path = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "requirements.txt"
@@ -57,11 +57,11 @@ requirements_path = os.path.join(
 
 async def legend_info(legendbot_info):
     infos = requests.get(legendbot_info).json()
-    _version = infos["LEGENDBOT-INFO"]["version"]
-    _release = infos["LEGENDBOT-INFO"]["release-date"]
-    _branch = infos["LEGENDBOT-INFO"]["branch"]
-    _author = infos["LEGENDBOT-INFO"]["author"]
-    _auturl = infos["LEGENDBOT-INFO"]["author-url"]
+    _version = infos["᭙ꪖ᥅ƺẞø†-INFO"]["version"]
+    _release = infos["᭙ꪖ᥅ƺẞø†-INFO"]["release-date"]
+    _branch = infos["᭙ꪖ᥅ƺẞø†-INFO"]["branch"]
+    _author = infos["᭙ꪖ᥅ƺẞø†-INFO"]["author"]
+    _auturl = infos["᭙ꪖ᥅ƺẞø†-INFO"]["author-url"]
     return _version, _release, _branch, _author, _auturl
 
 
@@ -136,7 +136,7 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await event.edit(
-        "✅ Successfully updated Legendẞø†!\n\nBot is restarting please wait for a minute."
+        "✅ Successfully updated ᭙ꪖ᥅ƺẞø†!\n\nBot is restarting please wait for a minute."
     )
     args = [sys.executable, "-m", "userbot"]
     os.execle(sys.executable, *args, os.environ)
@@ -194,7 +194,7 @@ async def upstream(event):
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if changelog == "" and not force_update:
         await event.edit(
-            "\n**😎 Lêɠêɳ̃dẞø† is UP-TO-DATE.**"
+            "\n**😎 ᭙ꪖ᥅ƺẞø† is UP-TO-DATE.**"
             f"\n\n**Version :**  {LEGENDversion}"
             f"\n**Owner :**  {legend_mention}"
             f"\n**Git Branch :**  {UPSTREAM_REPO_BRANCH}\n"
@@ -204,12 +204,12 @@ async def upstream(event):
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
         return await event.respond(
-            f"🌚 Do `.update build` to update your **Legendẞø†** !!"
+            f"🌚 Do `.update build` to update your **᭙ꪖ᥅ƺẞø†** !!"
         )
 
     if force_update:
         await event.edit(
-            "\n**😎 Lêɠêɳ̃dẞø† is UP-TO-DATE.**"
+            "\n**😎 ᭙ꪖ᥅ƺẞø† is UP-TO-DATE.**"
             f"\n\n**Version :**  {LEGENDversion}"
             f"\n**Owner :**  {legend_mention}"
             f"\n**Git Branch :**  {UPSTREAM_REPO_BRANCH}\n"
@@ -227,7 +227,7 @@ async def upstream(event):
         event,
         "`Hard-Update In Progress... \nPlease wait until docker build is finished...`",
     )
-    off_repo = "https://github.com/LEGEND-OS/LEGENDBOT"
+    off_repo = "https://github.com/Team-WarZ/WarZBOT"
     os.chdir("/app")
     git_legend = f"rm -rf .git"
     try:
@@ -259,7 +259,7 @@ async def upstream(event):
     ups_rem.fetch(ac_br)
     _version, _release, _branch, _author, _auturl = await legend_info(legendbot_info)
     await event.edit(
-        f"<b><i>Lêɠêɳ̃dẞø† Docker Build In Progress !!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>",
+        f"<b><i>᭙ꪖ᥅ƺẞø† Docker Build In Progress !!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>",
         link_preview=False,
         parse_mode="HTML",
     )
@@ -399,7 +399,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         await event.edit(
-            f"**Your Lêɠêɳ̃dẞø† Is UpToDate**\n\n**Version :**  __{LEGENDversion}__\n**Oɯɳҽɾ :**  {legend_mention}"
+            f"**Your ᭙ꪖ᥅ƺẞø† Is UpToDate**\n\n**Version :**  __{LEGENDversion}__\n**Oɯɳҽɾ :**  {legend_mention}"
         )
     else:
         await event.edit(
