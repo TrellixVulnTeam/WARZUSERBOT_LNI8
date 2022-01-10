@@ -19,8 +19,8 @@ async def reply_id(event):
 
 
 LEGEND_IMG = Config.AWAKE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice ℓєgєи∂ϐοτ"
-CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@Legend_Userbot"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ωαяz Choice ωαяzϐοτ"
+CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@TeamWarZ"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -66,10 +66,10 @@ async def amireallyalive(event):
 
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"     ⚜ 𝓛𝓮𝓰𝓮𝓷𝓭𝓑𝓸𝓽 𝓘𝓼 𝓐𝔀𝓪𝓴𝓮 ⚜\n"
-        LEGEND_caption += f"•🔥• Lêɠêɳ̃dẞø†     : ν3.0\n"
+        LEGEND_caption += f"•🔥• ᭙ꪖ᥅ƺẞø†     : ν3.0\n"
         LEGEND_caption += f"•🔥• 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
         LEGEND_caption += f"•🔥• 𝚄𝙿𝚃𝙸𝙼𝙴         : `{uptime}`\n"
-        LEGEND_caption += f"•🔥• 𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/Official_LegendBot)\n"
+        LEGEND_caption += f"•🔥• 𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/TheWarZBOT)\n"
         LEGEND_caption += f"•🔥• ᴹʸ 𝙶𝚁𝙾𝚄𝙿 : {CUSTOM_YOUR_GROUP}\n"
 
         await event.client.send_file(
@@ -83,10 +83,10 @@ async def amireallyalive(event):
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
             f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
+            f"🇮🇳 ωαяzϐοτ  : `{LEGENDversion}`\n"
             f"🇮🇳 υρτιмє        : `{uptime}`\n"
             f"🔱 ɱαรƭεɾ        : {mention}\n"
-            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/The_LegendBoy)\n",
+            f"🔱 σωɳεɾ         : [ωαяz](t.me/TheWarZ_Boy)\n",
         )
 
 
