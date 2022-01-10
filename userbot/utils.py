@@ -41,7 +41,7 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("Lêɠêɳ̃dẞø† ~ " + shortname)
+        LOGS.info("᭙ꪖ᥅ƺẞø† ~ " + shortname)
     else:
         import userbot.utils
 
@@ -76,7 +76,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info("🔥⚡Lêɠêɳ̃dẞø†⚡🔥 ~ " + shortname)
+        LOGS.info("🔥⚡᭙ꪖ᥅ƺẞø†⚡🔥 ~ " + shortname)
 
 
 def start_assistant(shortname):
@@ -242,7 +242,7 @@ def load_abuse(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["ABUSE." + shortname] = mod
-        LOGS.info("🔱LegendBot-Abuse🔱 ~ " + shortname)
+        LOGS.info("🔱᭙ꪖ᥅ƺẞø†-Abuse🔱 ~ " + shortname)
 
 
 def assistant_cmd(add_cmd, is_args=False):
@@ -651,7 +651,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/The_LegendBoy)"
+            link = "[here](https://t.me/TheWarZ_Boy)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
