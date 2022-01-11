@@ -49,7 +49,7 @@ bot = kbot = Legend
 tbot = LegendBot
 
 
-DEVS = ["2082798662"]
+DEVS = ["5015941039"]
 CMD_LIST = {}
 # for later purposes
 CMD_HELP = {}
@@ -61,7 +61,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-LEGEND_ID = ["2082798662"]
+LEGEND_ID = ["5015941039"]
 
 """ PPE initialization. """
 
@@ -86,7 +86,7 @@ if bool(ENV):
         basicConfig(
             format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=INFO
         )
-    LOGS = getLogger("[Lêɠêɳ̃dẞø† 3.0]")
+    LOGS = getLogger("[᭙ꪖ᥅ƺẞø† 3.0]")
 
 try:
     if Config.HEROKU_API_KEY is not None or Config.HEROKU_APP_NAME is not None:
