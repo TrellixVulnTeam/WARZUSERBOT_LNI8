@@ -462,11 +462,11 @@ bot.loop.run_until_complete(install())
 
 print(
     f"""
-╔════❰LEGENDBOT❱═❍⊱❁۪۪
+╔════❰WARZBOT❱═❍⊱❁۪۪
 ║┣⪼ OWNER - {Config.ALIVE_NAME}
 ║┣⪼ Group - @WarZSupport
 ║┣⪼ CREATOR - @TheWarZ_Boy
-║┣⪼ LEGENDBOT - {LEGENDversion}
+║┣⪼ WARZBOT - {LEGENDversion}
 ║┣⪼ ✨ 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱"""
