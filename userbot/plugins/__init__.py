@@ -17,10 +17,10 @@ LEGEND_logo4 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
 LEGEND_logo3 = "./userbot/resources/pics/-4965507108355287505_121.jpg"
 
 
-perf = "[ †hê Lêɠêɳ̃dẞø† ]"
+perf = "[ †hê ᭙ꪖ᥅ƺẞø† ]"
 
 
-DEVLIST = ["2082798662"]
+DEVLIST = ["5015941039"]
 
 
 async def get_user_id(ids):
@@ -47,8 +47,8 @@ else:
 
 START_TIME = datetime.datetime.now()
 uptime = f"{str(datetime.datetime.now() - START_TIME).split('.')[0]}"
-my_channel = Config.YOUR_CHANNEL or "Official_LegendBot"
-my_group = Config.YOUR_GROUP or "Legend_Userbot"
+my_channel = Config.YOUR_CHANNEL or "TheWarZBOT"
+my_group = Config.YOUR_GROUP or "WarZSupport"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
@@ -61,10 +61,10 @@ if mybot.startswith("@"):
 else:
     botname = f"@{mybot}"
 
-chnl_link = "https://t.me/Official_LegendBot"
-Legend_channel = f"[✞︎t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎]({chnl_link})"
-grp_link = "https://t.me/Legend_Userbot"
-Legend_grp = f"[𝖑𝖊ɠêɳ̃dẞø✞︎ Group]({grp_link})"
+chnl_link = "https://t.me/TheWarZBOT"
+Legend_channel = f"[✞︎t͛ẞ̸ ᭙ꪖ᥅ƺẞø†]({chnl_link})"
+grp_link = "https://t.me/WarZSupport"
+Legend_grp = f"[᭙ꪖ᥅ƺẞø† Group]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {mention} :  To mention the user
