@@ -12,7 +12,7 @@ if ENV:
         NO_OF_COLUMNS = int(os.environ.get("NO_OF_COLUMNS", 2))
         # emoji to be displayed  in help .legend
         BL_CHAT = os.environ.get("BL_CHAT", "-1001344140905")
-        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001169892177))
+        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001788973021))
         FBAN_LOGGER_GROUP = os.environ.get("FBAN_LOGGER_GROUP", None)
         if FBAN_LOGGER_GROUP:
             FBAN_LOGGER_GROUP = int(FBAN_LOGGER_GROUP)
@@ -68,7 +68,7 @@ if ENV:
         )
         PM_PIC = (
             os.environ.get("PM_PIC", None)
-            or "https://te.legra.ph/file/0c605739ddaa472cad75f.jpg"
+            or "https://te.legra.ph/file/23f0361e1e6ca6e860d5a.jpg"
         )
         AWAKE_PIC = (
             os.environ.get("AWAKE_PIC", None)
@@ -82,11 +82,11 @@ if ENV:
             os.environ.get("PING_PIC", None)
             or "https://te.legra.ph/file/ace5feae5b1ac8ea262ed.jpg"
         )
-        ALIVE_MSG = os.environ.get("ALIVE_MSG", None) or "Lêɠêɳ̃dẞø† Is Online"
+        ALIVE_MSG = os.environ.get("ALIVE_MSG", None) or "᭙ꪖ᥅ƺẞø† Is Online"
         PM_MSG = os.environ.get("PM_MSG", None)
         INSTANT_BLOCK = os.environ.get("INSTANT_BLOCK", "DISABLE")
-        YOUR_GROUP = os.environ.get("YOUR_GROUP", "@Legend_Userbot")
-        YOUR_CHANNEL = os.environ.get("YOUR_CHANNEL", "@Official_LegendBot.")
+        YOUR_GROUP = os.environ.get("YOUR_GROUP", "@WarZSupport")
+        YOUR_CHANNEL = os.environ.get("YOUR_CHANNEL", "@TheWarZBOT.")
         BOT_PIC = os.environ.get("ALIVE_PIC", None)
         # auto bio
         BIO_MSG = os.environ.get("ALIVE_MSG", None)
@@ -95,7 +95,7 @@ if ENV:
         LYDIA_API = os.environ.get("LYDIA_API", None)
         PLUGIN_CHANNEL = os.environ.get("PLUGIN_CHANNEL", None)
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/LEGEND-OS/LEGENDBOT"
+            "UPSTREAM_REPO", "https://github.com/Team-WarZ/WarZBOT"
         )
         APP_ID = os.environ.get("APP_ID", None)
         API_HASH = os.environ.get("API_HASH", None)
@@ -147,7 +147,7 @@ if ENV:
         TMP_DOWNLOAD_DIRECTORY = os.environ.get(
             "TMP_DOWNLOAD_DIRECTORY", "./userbot/DOWNLOADS/"
         )
-        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "LEGENDBOT")
+        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "WARZBOT")
         TG_GLOBAL_ALBUM_LIMIT = int(os.environ.get("TG_GLOBAL_ALBUM_LIMIT", 9))
         # MIRROR ACE API KEY AND TOKEN
         MIRROR_ACE_API_KEY = os.environ.get("MIRROR_ACE_API_KEY", None)
