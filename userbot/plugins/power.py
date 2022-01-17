@@ -16,7 +16,7 @@ async def _(event):
     await event.edit("яєϐοοτιиg **[ ██░ ]** ...\nωαιτ ƒєω мιиυτє☢️")
     await event.edit("яєϐοοτιиg **[ ███ ]** ...\nωαιτ ƒєω мιиυτєѕ☢️")
     await event.edit(
-        f"Rebooted ᭙ꪖ᥅ƺẞø† {LEGENDversion} **[ ✔️ ]** ...\nType `.ping` or `.legend` after 5min to check if I am working✔️"
+        f"Rebooted ᭙ꪖ᥅ƺẞø† {LEGENDversion} **[ ✔️ ]** ...\nType `{i}ping` or `{i}alive` after 5min to check if I am working✔️"
     )
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
